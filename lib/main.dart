@@ -1,3 +1,12 @@
+//1- Por cada pantalla se crea un archivo .dart y se guarda en el directorio lib/pages
+//2- La ruta de dicha pantalla se exporta en lib/routers
+//3- se agrega en el objeto routes del archivo main.dart
+// se importa a travez de pages/pages.dart para evitar un listado extenso de importaciones en el main (buenas practicas)
+
+//Los widgets (componentes que se reutilizan en distintas pantallas) se crean dentro de la carpeta
+//widgets y se importan en el archivo de la pantalla que lo utilizará
+//con la ruta import '../widgets/widgets.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/pages.dart';
 
@@ -15,7 +24,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: 'home',
       routes: {
-        'home': (context) => const HomePage(),
+        'home': (context) => const GameScreen(),
       },
     );
   }
