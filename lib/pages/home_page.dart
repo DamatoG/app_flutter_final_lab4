@@ -10,22 +10,24 @@ class HomePage extends StatelessWidget {
       drawer: NavigationDrawerWidget(),
       appBar: AppBar(
         centerTitle: false,
-        title: Padding(
-            padding: EdgeInsets.only(left: 5.0), child: Text("World Capp")),
-        elevation: 10,
-      ),
+        title: const Padding(
+            padding: EdgeInsets.only(left: 5.0),
+            child: Text("World Capp")),
+            elevation: 10),
       body: SingleChildScrollView(
         child: Center(
           child: Column(children: [
-            FadeInImage(
+            const FadeInImage(
               placeholder: AssetImage('assets/images/loading.gif'),
               image: NetworkImage(
-                  'https://i.blogs.es/1aad84/marvel/1366_521.jpeg'),
+                  'https://cloudfront-us-east-1.images.arcpublishing.com/infobae/WMOJCL27KNEN5HIGUAZJRBPMDI.jpg'),
             ),
             Container(
-              color: Color.fromARGB(31, 220, 36, 36),
               margin: EdgeInsets.all(20),
               padding: EdgeInsets.all(20),
+              decoration: const BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(20)),
+                color: Colors.green),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -34,7 +36,7 @@ class HomePage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('Titulo de prueba principal',
+                        Text('Partidos en vivo',
                             style: TextStyle(fontWeight: FontWeight.bold)),
                         SizedBox(height: 5),
                         Text('Subtítulo de prueba'),
@@ -77,10 +79,6 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
-                margin: EdgeInsets.all(20),
-                child: Text(
-                    'Non nisi sint nostrud laborum cillum ut labore veniam. Laboris ullamco dolor fugiat deserunt cupidatat ipsum sit amet in elit consectetur magna aliquip consectetur. Quis velit do in ea commodo tempor tempor mollit. Non in labore enim consectetur nulla incididunt nisi quis laborum do nostrud nostrud. Amet commodo mollit magna incididunt incididunt reprehenderit non. Reprehenderit esse quis nisi minim consectetur qui eu pariatur proident sint. Sint commodo sit aute duis enim culpa ad cupidatat in.'))
           ]),
         ),
       ),
