@@ -11,6 +11,7 @@ class HomePage extends StatelessWidget {
       drawer: const NavigationDrawerWidget(),
       appBar: AppBar(
           centerTitle: false,
+          backgroundColor: Colors.deepOrangeAccent,
           title: const Padding(
               padding: EdgeInsets.only(left: 5.0), child: Text("World Capp")),
           elevation: 10),
@@ -44,7 +45,10 @@ class HomePage extends StatelessWidget {
                               Text('${time.day}' '-' '${time.month}' '-''${time.year}',
                             style: const TextStyle(fontWeight: FontWeight.bold)
                             )]),
-                        Card(child:
+                        Card(
+                          color: Colors.green,
+                          elevation: 0,
+                          child:
                               Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children:const <Widget> [
                                 Text('0'),
@@ -54,10 +58,17 @@ class HomePage extends StatelessWidget {
                                 Text('0')
                       ])
                       ),
-                        Card(child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children:const <Widget> [
-                            Image(image: AssetImage('assets/images/marruecos.png')),
-                            Image(image: AssetImage('assets/images/marruecos.png'))
+                        Card(
+                          color: Colors.green,
+                          elevation: 0,
+                          child:
+                              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children:const <Widget> [
+                                Text('0'),
+                                Image(image: AssetImage('assets/images/marruecos.png')),
+                                Text('VS'),
+                                Image(image: AssetImage('assets/images/espania.png')),
+                                Text('0')
                       ])
                       )
                       ],

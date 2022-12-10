@@ -9,14 +9,14 @@ class NavigationDrawerWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
         child: Material(
-      color: const Color.fromARGB(232, 38, 37, 43),
+      color: Color.fromARGB(255, 180, 144, 91),
       child: ListView(
         children: <Widget>[
           const SizedBox(height: 10),
                 buildSearchBar(),
           const SizedBox(height: 10),
           const Divider(
-            color: Color.fromARGB(255, 252, 252, 252)
+            color: Colors.black
           ),
           const SizedBox(height: 10),
           const SizedBox(height: 10),
@@ -49,7 +49,7 @@ Widget buildMenuItem({
   required String text,
   required IconData icon,
 }) {
-  const color = Color.fromARGB(252, 252, 252, 252);
+  const color = Colors.black;
   const hoverColor = Color.fromARGB(232, 230, 8, 196);
 
   return ListTile(
@@ -61,7 +61,7 @@ Widget buildMenuItem({
 }
 
 Widget buildSearchBar() {
-    const color = Colors.white;
+    const color = Colors.black;
 
     return TextField(
       style: const TextStyle(color: color),
