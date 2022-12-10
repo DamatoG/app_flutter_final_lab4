@@ -28,6 +28,11 @@ class NavigationDrawerWidget extends StatelessWidget {
           buildMenuItem(
             text: "Proximos Partidos",
             icon: Icons.calendar_month_outlined,
+          ),
+          const SizedBox(height: 10),
+          buildMenuItem(
+            text: "Estadisticas (Proximamente)",
+            icon: Icons.stacked_bar_chart_sharp,
           )
         ],
       ),
