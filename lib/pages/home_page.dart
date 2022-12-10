@@ -37,9 +37,29 @@ class HomePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children:
                       [
-                        Text('Partidos en vivo' '      ' '${time.day}' '-' '${time.month}' '-''${time.year}',
-                            style: const TextStyle(fontWeight: FontWeight.bold)),
-                        const Card(child: Image(image: AssetImage('assets/images/marruecos.png')))
+                        Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children:[
+                              const Text('Partidos en vivo'),
+                              Text('${time.day}' '-' '${time.month}' '-''${time.year}',
+                            style: const TextStyle(fontWeight: FontWeight.bold)
+                            )]),
+                        Card(child:
+                              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children:const <Widget> [
+                                Text('0'),
+                                Image(image: AssetImage('assets/images/marruecos.png')),
+                                Text('VS'),
+                                Image(image: AssetImage('assets/images/espania.png')),
+                                Text('0')
+                      ])
+                      ),
+                        Card(child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children:const <Widget> [
+                            Image(image: AssetImage('assets/images/marruecos.png')),
+                            Image(image: AssetImage('assets/images/marruecos.png'))
+                      ])
+                      )
                       ],
                     ),
                   ),
@@ -54,21 +74,21 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Column(
-                    children: [
+                    children: const [
                       Icon(Icons.phone),
                       SizedBox(height: 5),
                       Text('CALL'),
                     ],
                   ),
                   Column(
-                    children: [
+                    children: const [
                       Icon(Icons.telegram),
                       SizedBox(height: 5),
                       Text('ROUTE'),
                     ],
                   ),
                   Column(
-                    children: [
+                    children: const [
                       Icon(Icons.share),
                       SizedBox(height: 5),
                       Text('SHARE'),
