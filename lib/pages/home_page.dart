@@ -35,14 +35,14 @@ class HomePage extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
-                        Text('Partidos en vivo',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
+                      children:
+                      [
+                        Text('Partidos en vivo' '      ' '${time.day}' '-' '${time.month}' '-''${time.year}',
+                            style: const TextStyle(fontWeight: FontWeight.bold)),
+                        const Card(child: Image(image: AssetImage('assets/images/marruecos.png')))
                       ],
                     ),
                   ),
-                  Text('${time.day}''-'+'${time.month}''-''${time.year}',
-                      style: const TextStyle(fontWeight: FontWeight.bold))
                 ],
               ),
             ),
