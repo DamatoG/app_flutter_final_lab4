@@ -6,14 +6,14 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var time = DateTime.now();
     return Scaffold(
-      drawer: NavigationDrawerWidget(),
+      drawer: const NavigationDrawerWidget(),
       appBar: AppBar(
-        centerTitle: false,
-        title: const Padding(
-            padding: EdgeInsets.only(left: 5.0),
-            child: Text("World Capp")),
-            elevation: 10),
+          centerTitle: false,
+          title: const Padding(
+              padding: EdgeInsets.only(left: 5.0), child: Text("World Capp")),
+          elevation: 10),
       body: SingleChildScrollView(
         child: Center(
           child: Column(children: [
@@ -23,11 +23,11 @@ class HomePage extends StatelessWidget {
                   'https://cloudfront-us-east-1.images.arcpublishing.com/infobae/WMOJCL27KNEN5HIGUAZJRBPMDI.jpg'),
             ),
             Container(
-              margin: EdgeInsets.all(20),
-              padding: EdgeInsets.all(20),
+              margin: const EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               decoration: const BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(20)),
-                color: Colors.green),
+                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                  color: Colors.green),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -35,23 +35,21 @@ class HomePage extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
+                      children: const [
                         Text('Partidos en vivo',
                             style: TextStyle(fontWeight: FontWeight.bold)),
-                        SizedBox(height: 5),
-                        Text('Subtítulo de prueba'),
                       ],
                     ),
                   ),
-                  Icon(Icons.star_outline),
-                  Text('50')
+                  Text('${time.day}''-'+'${time.month}''-''${time.year}',
+                      style: const TextStyle(fontWeight: FontWeight.bold))
                 ],
               ),
             ),
             Container(
               color: Colors.black12,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              padding: EdgeInsets.symmetric(vertical: 20),
+              margin: const EdgeInsets.symmetric(horizontal: 20),
+              padding: const EdgeInsets.symmetric(vertical: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [

@@ -33,7 +33,12 @@ class NavigationDrawerWidget extends StatelessWidget {
           buildMenuItem(
             text: "Estadisticas (Proximamente)",
             icon: Icons.stacked_bar_chart_sharp,
-          )
+          ),
+            const SizedBox(height: 10),
+          buildMenuItem(
+            text: "Historial (Proximamente)",
+            icon: Icons.history,
+          ),
         ],
       ),
     ));
