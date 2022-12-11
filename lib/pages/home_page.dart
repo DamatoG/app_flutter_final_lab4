@@ -11,104 +11,160 @@ class HomePage extends StatelessWidget {
       drawer: const NavigationDrawerWidget(),
       appBar: AppBar(
           centerTitle: false,
-          backgroundColor: Colors.deepOrangeAccent,
+          backgroundColor: Colors.black38,
           title: const Padding(
               padding: EdgeInsets.only(left: 5.0), child: Text("World Capp")),
           elevation: 10),
-      body: SingleChildScrollView(
-        child: Center(
-          child: Column(children: [
-            const FadeInImage(
-              placeholder: AssetImage('assets/images/loading.gif'),
-              image: NetworkImage(
-                  'https://cloudfront-us-east-1.images.arcpublishing.com/infobae/WMOJCL27KNEN5HIGUAZJRBPMDI.jpg'),
-            ),
-            Container(
-              margin: const EdgeInsets.all(20),
-              padding: const EdgeInsets.all(20),
-              decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(20)),
-                  color: Colors.green),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Expanded(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children:
-                      [
-                        Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children:[
-                              const Text('Partidos en vivo'),
-                              Text('${time.day}' '-' '${time.month}' '-''${time.year}',
-                            style: const TextStyle(fontWeight: FontWeight.bold)
-                            )]),
-                        Card(
-                          color: Colors.green,
-                          elevation: 0,
-                          child:
-                              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children:const <Widget> [
-                                Text('0'),
-                                Image(image: AssetImage('assets/images/marruecos.png')),
-                                Text('VS'),
-                                Image(image: AssetImage('assets/images/espania.png')),
-                                Text('0')
-                      ])
+      body: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors:[ Colors.black45,
+                     Colors.black12],)
+        ),
+        child: SingleChildScrollView(
+          child: Center(
+            child: Column(children: [
+              const FadeInImage(
+                placeholder: AssetImage('assets/images/loading.gif'),
+                image: NetworkImage(
+                    'https://cloudfront-us-east-1.images.arcpublishing.com/infobae/WMOJCL27KNEN5HIGUAZJRBPMDI.jpg'),
+              ),
+              Container(
+                margin: const EdgeInsets.all(20),
+                padding: const EdgeInsets.all(20),
+                decoration: const BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                    color: Colors.blueGrey),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Expanded(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                const Text('Partidos en vivo'),
+                                Text(
+                                    '${time.day}'
+                                    '-'
+                                    '${time.month}'
+                                    '-'
+                                    '${time.year}',
+                                    style: const TextStyle(
+                                        fontWeight: FontWeight.bold))
+                              ]),
+                          Card(
+                              color: Colors.blueGrey,
+                              elevation: 0,
+                              child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: const <Widget>[
+                                    Text('0'),
+                                    Image(
+                                        image: AssetImage(
+                                            'assets/images/marruecos.png')),
+                                    Text('VS'),
+                                    Image(
+                                        image: AssetImage(
+                                            'assets/images/espania.png')),
+                                    Text('0')
+                                  ])),
+                          Card(
+                              color: Colors.blueGrey,
+                              elevation: 0,
+                              child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: const <Widget>[
+                                    Text('0'),
+                                    Image(
+                                        image: AssetImage(
+                                            'assets/images/marruecos.png')),
+                                    Text('VS'),
+                                    Image(
+                                        image: AssetImage(
+                                            'assets/images/espania.png')),
+                                    Text('0')
+                                  ]))
+                        ],
                       ),
-                        Card(
-                          color: Colors.green,
-                          elevation: 0,
-                          child:
-                              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children:const <Widget> [
-                                Text('0'),
-                                Image(image: AssetImage('assets/images/marruecos.png')),
-                                Text('VS'),
-                                Image(image: AssetImage('assets/images/espania.png')),
-                                Text('0')
-                      ])
-                      )
-                      ],
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-            Container(
-              color: Colors.black12,
-              margin: const EdgeInsets.symmetric(horizontal: 20),
-              padding: const EdgeInsets.symmetric(vertical: 20),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Column(
-                    children: const [
-                      Icon(Icons.phone),
-                      SizedBox(height: 5),
-                      Text('CALL'),
-                    ],
-                  ),
-                  Column(
-                    children: const [
-                      Icon(Icons.telegram),
-                      SizedBox(height: 5),
-                      Text('ROUTE'),
-                    ],
-                  ),
-                  Column(
-                    children: const [
-                      Icon(Icons.share),
-                      SizedBox(height: 5),
-                      Text('SHARE'),
-                    ],
-                  ),
-                ],
+                  Container(
+                margin: const EdgeInsets.all(20),
+                padding: const EdgeInsets.all(20),
+                decoration: const BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                    color: Colors.blueGrey),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Expanded(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                const Text('Proximos Partidos'),
+                                Text(
+                                    '${time.day+3}'
+                                    '-'
+                                    '${time.month}'
+                                    '-'
+                                    '${time.year}',
+                                    style: const TextStyle(
+                                        fontWeight: FontWeight.bold))
+                              ]),
+                          Card(
+                              color: Colors.blueGrey,
+                              elevation: 0,
+                              child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: const <Widget>[
+                                    Text('0'),
+                                    Image(
+                                        image: AssetImage(
+                                            'assets/images/marruecos.png')),
+                                    Text('VS'),
+                                    Image(
+                                        image: AssetImage(
+                                            'assets/images/espania.png')),
+                                    Text('0')
+                                  ])),
+                          Card(
+                              color: Colors.blueGrey,
+                              elevation: 0,
+                              child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: const <Widget>[
+                                    Text('0'),
+                                    Image(
+                                        image: AssetImage(
+                                            'assets/images/marruecos.png')),
+                                    Text('VS'),
+                                    Image(
+                                        image: AssetImage(
+                                            'assets/images/espania.png')),
+                                    Text('0')
+                                  ]))
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
-            ),
-          ]),
+            ]),
+          ),
         ),
       ),
     );
