@@ -17,10 +17,9 @@ class HomePage extends StatelessWidget {
           elevation: 10),
       body: Container(
         decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            colors:[ Colors.black45,
-                     Colors.black12],)
-        ),
+            gradient: LinearGradient(
+          colors: [Colors.black45, Colors.black12],
+        )),
         child: SingleChildScrollView(
           child: Center(
             child: Column(children: [
@@ -62,16 +61,13 @@ class HomePage extends StatelessWidget {
                               child: Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
-                                  children:<Widget>[
+                                  children: <Widget>[
                                     Text('0'),
                                     Image(
                                         image: AssetImage(
                                             'assets/images/marruecos.png')),
                                     Column(
-                                      children: [
-                                        Text('VS'),
-                                        Text('36'"'")
-                                      ],
+                                      children: [Text('VS'), Text('36' "'")],
                                     ),
                                     Image(
                                         image: AssetImage(
@@ -90,10 +86,7 @@ class HomePage extends StatelessWidget {
                                         image: AssetImage(
                                             'assets/images/marruecos.png')),
                                     Column(
-                                      children: [
-                                        Text('VS'),
-                                        Text('32'"'")
-                                      ],
+                                      children: [Text('VS'), Text('32' "'")],
                                     ),
                                     Image(
                                         image: AssetImage(
@@ -106,71 +99,77 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               ),
-                  Container(
-                margin: const EdgeInsets.all(20),
-                padding: const EdgeInsets.all(20),
-                decoration: const BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(20)),
-                    color: Colors.blueGrey),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Expanded(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                const Text('Proximos Partidos'),
-                                Text(
-                                    '${time.day+3}'
-                                    '-'
-                                    '${time.month}'
-                                    '-'
-                                    '${time.year}',
-                                    style: const TextStyle(
-                                        fontWeight: FontWeight.bold))
-                              ]),
-                          Card(
-                              color: Colors.blueGrey,
-                              elevation: 0,
-                              child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceEvenly,
-                                  children: const <Widget>[
-                                    Text('0'),
-                                    Image(
-                                        image: AssetImage(
-                                            'assets/images/marruecos.png')),
-                                    Text('VS'),
-                                    Image(
-                                        image: AssetImage(
-                                            'assets/images/espania.png')),
-                                    Text('0')
-                                  ])),
-                          Card(
-                              color: Colors.blueGrey,
-                              elevation: 0,
-                              child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceEvenly,
-                                  children: const <Widget>[
-                                    Text('0'),
-                                    Image(
-                                        image: AssetImage(
-                                            'assets/images/marruecos.png')),
-                                    Text('VS'),
-                                    Image(
-                                        image: AssetImage(
-                                            'assets/images/espania.png')),
-                                    Text('0')
-                                  ]))
-                        ],
+              InkWell(
+                onTap: () {
+                  Navigator.pushNamed(context, 'listGames');
+                },
+                child: Container(
+                  margin: const EdgeInsets.all(20),
+                  padding: const EdgeInsets.all(20),
+                  decoration: const BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(20)),
+                      color: Colors.blueGrey),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  const Text('Proximos Partidos'),
+                                  Text(
+                                      '${time.day + 3}'
+                                      '-'
+                                      '${time.month}'
+                                      '-'
+                                      '${time.year}',
+                                      style: const TextStyle(
+                                          fontWeight: FontWeight.bold))
+                                ]),
+                            Card(
+                                color: Colors.blueGrey,
+                                elevation: 0,
+                                child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceEvenly,
+                                    children: const <Widget>[
+                                      Text('0'),
+                                      Image(
+                                          image: AssetImage(
+                                              'assets/images/marruecos.png')),
+                                      Text('VS'),
+                                      Image(
+                                          image: AssetImage(
+                                              'assets/images/espania.png')),
+                                      Text('0')
+                                    ])),
+                            Card(
+                                color: Colors.blueGrey,
+                                elevation: 0,
+                                child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceEvenly,
+                                    children: const <Widget>[
+                                      Text('0'),
+                                      Image(
+                                          image: AssetImage(
+                                              'assets/images/marruecos.png')),
+                                      Text('VS'),
+                                      Image(
+                                          image: AssetImage(
+                                              'assets/images/espania.png')),
+                                      Text('0')
+                                    ]))
+                          ],
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ]),

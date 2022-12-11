@@ -69,12 +69,7 @@ Widget buildMenuItem(
     title: Text(text, style: const TextStyle(color: color)),
     hoverColor: hoverColor,
     onTap: () {
-      print('Detalle $text');
-      //Navigator.pop(context);
-      //Navigator.pushReplacementNamed(context, item['route']!);
-
       Navigator.pushNamed(context, ruta);
-      //MaterialPageRoute(builder: (context) => ruta),
     },
   );
 }
