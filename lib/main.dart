@@ -22,9 +22,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'MyApp',
       debugShowCheckedModeBanner: false,
-      initialRoute: 'home',
+      initialRoute: 'listGames',
       routes: {
         'home': (context) => const HomePage(),
+        'listGames': (context) => ListGamePage(),
+        'gameDetail': (context) => GameScreen(),
       },
     );
   }
