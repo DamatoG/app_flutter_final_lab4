@@ -6,82 +6,175 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var time = DateTime.now();
     return Scaffold(
-      drawer: NavigationDrawerWidget(),
+      drawer: const NavigationDrawerWidget(),
       appBar: AppBar(
-        centerTitle: false,
-        title: Padding(
-            padding: EdgeInsets.only(left: 5.0), child: Text("World Capp")),
-        elevation: 10,
-      ),
-      body: SingleChildScrollView(
-        child: Center(
-          child: Column(children: [
-            FadeInImage(
-              placeholder: AssetImage('assets/images/loading.gif'),
-              image: NetworkImage(
-                  'https://i.blogs.es/1aad84/marvel/1366_521.jpeg'),
-            ),
-            Container(
-              color: Color.fromARGB(31, 220, 36, 36),
-              margin: EdgeInsets.all(20),
-              padding: EdgeInsets.all(20),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Expanded(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text('Titulo de prueba principal',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
-                        SizedBox(height: 5),
-                        Text('Subtítulo de prueba'),
-                      ],
+          centerTitle: false,
+          backgroundColor: Colors.black38,
+          title: const Padding(
+              padding: EdgeInsets.only(left: 5.0), child: Text("World Capp")),
+          elevation: 10),
+      body: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors:[ Colors.black45,
+                     Colors.black12],)
+        ),
+        child: SingleChildScrollView(
+          child: Center(
+            child: Column(children: [
+              const FadeInImage(
+                placeholder: AssetImage('assets/images/loading.gif'),
+                image: NetworkImage(
+                    'https://cloudfront-us-east-1.images.arcpublishing.com/infobae/WMOJCL27KNEN5HIGUAZJRBPMDI.jpg'),
+              ),
+              Container(
+                margin: const EdgeInsets.all(20),
+                padding: const EdgeInsets.all(20),
+                decoration: const BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                    color: Colors.blueGrey),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Expanded(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                const Text('Partidos en vivo'),
+                                Text(
+                                    '${time.day}'
+                                    '-'
+                                    '${time.month}'
+                                    '-'
+                                    '${time.year}',
+                                    style: const TextStyle(
+                                        fontWeight: FontWeight.bold))
+                              ]),
+                          Card(
+                              color: Colors.blueGrey,
+                              elevation: 0,
+                              child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children:<Widget>[
+                                    Text('0'),
+                                    Image(
+                                        image: AssetImage(
+                                            'assets/images/marruecos.png')),
+                                    Column(
+                                      children: [
+                                        Text('VS'),
+                                        Text('36'"'")
+                                      ],
+                                    ),
+                                    Image(
+                                        image: AssetImage(
+                                            'assets/images/espania.png')),
+                                    Text('0')
+                                  ])),
+                          Card(
+                              color: Colors.blueGrey,
+                              elevation: 0,
+                              child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: <Widget>[
+                                    Text('0'),
+                                    Image(
+                                        image: AssetImage(
+                                            'assets/images/marruecos.png')),
+                                    Column(
+                                      children: [
+                                        Text('VS'),
+                                        Text('32'"'")
+                                      ],
+                                    ),
+                                    Image(
+                                        image: AssetImage(
+                                            'assets/images/espania.png')),
+                                    Text('0')
+                                  ]))
+                        ],
+                      ),
                     ),
-                  ),
-                  Icon(Icons.star_outline),
-                  Text('50')
-                ],
+                  ],
+                ),
               ),
-            ),
-            Container(
-              color: Colors.black12,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              padding: EdgeInsets.symmetric(vertical: 20),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Column(
-                    children: [
-                      Icon(Icons.phone),
-                      SizedBox(height: 5),
-                      Text('CALL'),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      Icon(Icons.telegram),
-                      SizedBox(height: 5),
-                      Text('ROUTE'),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      Icon(Icons.share),
-                      SizedBox(height: 5),
-                      Text('SHARE'),
-                    ],
-                  ),
-                ],
+                  Container(
+                margin: const EdgeInsets.all(20),
+                padding: const EdgeInsets.all(20),
+                decoration: const BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                    color: Colors.blueGrey),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Expanded(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                const Text('Proximos Partidos'),
+                                Text(
+                                    '${time.day+3}'
+                                    '-'
+                                    '${time.month}'
+                                    '-'
+                                    '${time.year}',
+                                    style: const TextStyle(
+                                        fontWeight: FontWeight.bold))
+                              ]),
+                          Card(
+                              color: Colors.blueGrey,
+                              elevation: 0,
+                              child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: const <Widget>[
+                                    Text('0'),
+                                    Image(
+                                        image: AssetImage(
+                                            'assets/images/marruecos.png')),
+                                    Text('VS'),
+                                    Image(
+                                        image: AssetImage(
+                                            'assets/images/espania.png')),
+                                    Text('0')
+                                  ])),
+                          Card(
+                              color: Colors.blueGrey,
+                              elevation: 0,
+                              child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: const <Widget>[
+                                    Text('0'),
+                                    Image(
+                                        image: AssetImage(
+                                            'assets/images/marruecos.png')),
+                                    Text('VS'),
+                                    Image(
+                                        image: AssetImage(
+                                            'assets/images/espania.png')),
+                                    Text('0')
+                                  ]))
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
-            ),
-            Container(
-                margin: EdgeInsets.all(20),
-                child: Text(
-                    'Non nisi sint nostrud laborum cillum ut labore veniam. Laboris ullamco dolor fugiat deserunt cupidatat ipsum sit amet in elit consectetur magna aliquip consectetur. Quis velit do in ea commodo tempor tempor mollit. Non in labore enim consectetur nulla incididunt nisi quis laborum do nostrud nostrud. Amet commodo mollit magna incididunt incididunt reprehenderit non. Reprehenderit esse quis nisi minim consectetur qui eu pariatur proident sint. Sint commodo sit aute duis enim culpa ad cupidatat in.'))
-          ]),
+            ]),
+          ),
         ),
       ),
     );
