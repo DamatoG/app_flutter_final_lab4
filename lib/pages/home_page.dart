@@ -62,12 +62,17 @@ class HomePage extends StatelessWidget {
                               child: Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
-                                  children: const <Widget>[
+                                  children:<Widget>[
                                     Text('0'),
                                     Image(
                                         image: AssetImage(
                                             'assets/images/marruecos.png')),
-                                    Text('VS'),
+                                    Column(
+                                      children: [
+                                        Text('VS'),
+                                        Text('36'"'")
+                                      ],
+                                    ),
                                     Image(
                                         image: AssetImage(
                                             'assets/images/espania.png')),
@@ -79,12 +84,17 @@ class HomePage extends StatelessWidget {
                               child: Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
-                                  children: const <Widget>[
+                                  children: <Widget>[
                                     Text('0'),
                                     Image(
                                         image: AssetImage(
                                             'assets/images/marruecos.png')),
-                                    Text('VS'),
+                                    Column(
+                                      children: [
+                                        Text('VS'),
+                                        Text('32'"'")
+                                      ],
+                                    ),
                                     Image(
                                         image: AssetImage(
                                             'assets/images/espania.png')),

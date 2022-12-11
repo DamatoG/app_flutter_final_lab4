@@ -7,41 +7,47 @@ class NavigationDrawerWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Drawer(
-        child: Material(
-      color: Color.fromARGB(255, 180, 144, 91),
-      child: ListView(
-        children: <Widget>[
-          const SizedBox(height: 10),
-                buildSearchBar(),
-          const SizedBox(height: 10),
-          const Divider(
-            color: Colors.black
-          ),
-          const SizedBox(height: 10),
-          const SizedBox(height: 10),
-          buildMenuItem(
-            text: "Inicio",
-            icon: Icons.home,
-          ),
-          const SizedBox(height: 10),
-          buildMenuItem(
-            text: "Proximos Partidos",
-            icon: Icons.calendar_month_outlined,
-          ),
-          const SizedBox(height: 10),
-          buildMenuItem(
-            text: "Estadisticas (Proximamente)",
-            icon: Icons.stacked_bar_chart_sharp,
-          ),
+    return Container(
+      decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors:[ Colors.blueGrey,
+                     Colors.blueAccent],)
+        ),
+      child: Drawer(
+          child: Material(
+        child: ListView(
+          children: <Widget>[
             const SizedBox(height: 10),
-          buildMenuItem(
-            text: "Historial (Proximamente)",
-            icon: Icons.history,
-          ),
-        ],
-      ),
-    ));
+                  buildSearchBar(),
+            const SizedBox(height: 10),
+            const Divider(
+              color: Colors.black
+            ),
+            const SizedBox(height: 10),
+            const SizedBox(height: 10),
+            buildMenuItem(
+              text: "Inicio",
+              icon: Icons.home,
+            ),
+            const SizedBox(height: 10),
+            buildMenuItem(
+              text: "Proximos Partidos",
+              icon: Icons.calendar_month_outlined,
+            ),
+            const SizedBox(height: 10),
+            buildMenuItem(
+              text: "Estadisticas (Proximamente)",
+              icon: Icons.stacked_bar_chart_sharp,
+            ),
+              const SizedBox(height: 10),
+            buildMenuItem(
+              text: "Historial (Proximamente)",
+              icon: Icons.history,
+            ),
+          ],
+        ),
+      )),
+    );
   }
 }
 
