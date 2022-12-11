@@ -13,7 +13,6 @@ import 'package:flutter_application_1/pages/pages.dart';
 void main() {
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -22,9 +21,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'MyApp',
       debugShowCheckedModeBanner: false,
-      initialRoute: 'home',
+      initialRoute: 'Home',
       routes: {
         'home': (context) => const HomePage(),
+        'listGames': (context) => ListGamePage(),
+        'gameDetail': (context) => GameScreen(),
       },
     );
   }
