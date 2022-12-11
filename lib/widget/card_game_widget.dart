@@ -88,7 +88,7 @@ class CardGame extends StatelessWidget {
         ),
       ),
       onTap: () {
-        print('tap $equipoLocal');
+        print('Detalle $equipoLocal vs $equipoVisita');
         //Navigator.pop(context);
         //Navigator.pushReplacementNamed(context, item['route']!);
         Navigator.push(

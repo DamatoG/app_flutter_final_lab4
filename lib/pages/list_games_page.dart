@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/pages/home_page.dart';
 import 'package:flutter_application_1/widget/widget.dart';
 
 class ListGamePage extends StatelessWidget {
@@ -61,24 +60,16 @@ class ListGamePage extends StatelessWidget {
       body: ListView.builder(
           itemCount: _cardsItems.length,
           itemBuilder: (context, index) {
-            return GestureDetector(
-              onTap: () {
-                Navigator.pop(context);
-                //Navigator.pushReplacementNamed(context, item['route']!);
-                Navigator.pushNamed(context, 'home');
-              },
-              child: CardGame(
-                  fechaJuego: _cardsItems[index]['fechaJuego'].toString(),
-                  horaJuego: _cardsItems[index]['horaJuego'].toString(),
-                  lugarJuego: _cardsItems[index]['lugarJuego'].toString(),
-                  equipoLocal: _cardsItems[index]['equipoLocal'].toString(),
-                  equipoVisita: _cardsItems[index]['equipoVisita'].toString(),
-                  resultadoLocal:
-                      _cardsItems[index]['resultadoLocal'].toString(),
-                  resultadoVisita:
-                      _cardsItems[index]['resultadoVisita'].toString(),
-                  tiempo: _cardsItems[index]['tiempo'].toString()),
-            );
+            return CardGame(
+                fechaJuego: _cardsItems[index]['fechaJuego'].toString(),
+                horaJuego: _cardsItems[index]['horaJuego'].toString(),
+                lugarJuego: _cardsItems[index]['lugarJuego'].toString(),
+                equipoLocal: _cardsItems[index]['equipoLocal'].toString(),
+                equipoVisita: _cardsItems[index]['equipoVisita'].toString(),
+                resultadoLocal: _cardsItems[index]['resultadoLocal'].toString(),
+                resultadoVisita:
+                    _cardsItems[index]['resultadoVisita'].toString(),
+                tiempo: _cardsItems[index]['tiempo'].toString());
           }),
     );
   }
