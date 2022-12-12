@@ -63,19 +63,21 @@ class HomePage extends StatelessWidget {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
                                   children: [
-                                    Text('0'),
-                                    Image(
-                                      width: 60,height: 60,
+                                    const Text('0'),
+                                    const Image(
+                                        width: 60,
+                                        height: 60,
                                         image: AssetImage(
                                             'assets/images/logo-marruecos.png')),
                                     Column(
                                       children: [Text('VS'), Text('36' "'")],
                                     ),
-                                    Image(
-                                      width: 60,height: 60,
+                                    const Image(
+                                        width: 60,
+                                        height: 60,
                                         image: AssetImage(
                                             'assets/images/logo-francia.png')),
-                                    Text('0')
+                                    const Text('1')
                                   ])),
                           Card(
                               color: Colors.blueGrey,
@@ -84,19 +86,21 @@ class HomePage extends StatelessWidget {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
                                   children: [
-                                    Text('0'),
-                                    Image(
-                                      width: 60,height: 60,
+                                    const Text('0'),
+                                    const Image(
+                                        width: 60,
+                                        height: 60,
                                         image: AssetImage(
                                             'assets/images/logo-argentina.png')),
                                     Column(
                                       children: [Text('VS'), Text('32' "'")],
                                     ),
-                                    Image(
-                                      width: 60,height: 60,
+                                    const Image(
+                                        width: 60,
+                                        height: 60,
                                         image: AssetImage(
                                             'assets/images/logo-inglaterra.png')),
-                                    Text('0')
+                                    const Text('0')
                                   ]))
                         ],
                       ),
@@ -142,15 +146,17 @@ class HomePage extends StatelessWidget {
                                 child: Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceEvenly,
-                                    children: [
+                                    children: const [
                                       Text('0'),
                                       Image(
-                                        width: 60,height: 60,
+                                          width: 60,
+                                          height: 60,
                                           image: AssetImage(
                                               'assets/images/logo-holanda.png')),
                                       Text('VS'),
                                       Image(
-                                        width: 60,height: 60,
+                                          width: 60,
+                                          height: 60,
                                           image: AssetImage(
                                               'assets/images/logo-croacia.png')),
                                       Text('0')
@@ -161,15 +167,17 @@ class HomePage extends StatelessWidget {
                                 child: Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceEvenly,
-                                    children: [
+                                    children: const [
                                       Text('0'),
                                       Image(
-                                        width: 60,height: 60,
+                                          width: 60,
+                                          height: 60,
                                           image: AssetImage(
                                               'assets/images/logo-brasil.png')),
                                       Text('VS'),
                                       Image(
-                                        width: 60,height: 60,
+                                          width: 60,
+                                          height: 60,
                                           image: AssetImage(
                                               'assets/images/logo-portugal.png')),
                                       Text('0')
