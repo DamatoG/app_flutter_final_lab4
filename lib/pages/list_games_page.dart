@@ -51,7 +51,7 @@ class ListGamePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      drawer: NavigationDrawerWidget(),
+      drawer: const NavigationDrawerWidget(),
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: const Text("Mundial Qatar 2022"),
@@ -60,16 +60,23 @@ class ListGamePage extends StatelessWidget {
       body: ListView.builder(
           itemCount: _cardsItems.length,
           itemBuilder: (context, index) {
-            return CardGame(
-                fechaJuego: _cardsItems[index]['fechaJuego'].toString(),
-                horaJuego: _cardsItems[index]['horaJuego'].toString(),
-                lugarJuego: _cardsItems[index]['lugarJuego'].toString(),
-                equipoLocal: _cardsItems[index]['equipoLocal'].toString(),
-                equipoVisita: _cardsItems[index]['equipoVisita'].toString(),
-                resultadoLocal: _cardsItems[index]['resultadoLocal'].toString(),
-                resultadoVisita:
-                    _cardsItems[index]['resultadoVisita'].toString(),
-                tiempo: _cardsItems[index]['tiempo'].toString());
+            return InkWell(
+              child: CardGame(
+                  fechaJuego: _cardsItems[index]['fechaJuego'].toString(),
+                  horaJuego: _cardsItems[index]['horaJuego'].toString(),
+                  lugarJuego: _cardsItems[index]['lugarJuego'].toString(),
+                  equipoLocal: _cardsItems[index]['equipoLocal'].toString(),
+                  equipoVisita: _cardsItems[index]['equipoVisita'].toString(),
+                  resultadoLocal:
+                      _cardsItems[index]['resultadoLocal'].toString(),
+                  resultadoVisita:
+                      _cardsItems[index]['resultadoVisita'].toString(),
+                  tiempo: _cardsItems[index]['tiempo'].toString()),
+              onTap: () {
+                print("hola");
+                Navigator.pushNamed(context, 'gameDetail');
+              },
+            );
           }),
     );
   }

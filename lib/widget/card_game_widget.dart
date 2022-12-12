@@ -24,76 +24,65 @@ class CardGame extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      child: Card(
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-          child: Column(
-            children: [
-              Column(
-                children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Fecha: $fechaJuego',
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      Text(
-                        'Hora: $horaJuego',
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      Text(
-                        'Lugar: $lugarJuego',
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          Column(
-                            children: [
-                              Image.asset(
-                                'assets/images/logo-$equipoLocal.png',
-                                width: 60,
-                                height: 60,
-                              ),
-                              Text(equipoLocal, style: TextStyle(fontSize: 20))
-                            ],
-                          ),
-                          Column(
-                            children: [
-                              Text('$resultadoLocal - $resultadoVisita',
-                                  style: TextStyle(fontSize: 40)),
-                              Text(tiempo)
-                            ],
-                          ),
-                          Column(children: [
-                            Image.asset('assets/images/logo-$equipoVisita.png',
-                                width: 60, height: 60),
-                            Text(equipoVisita, style: TextStyle(fontSize: 20))
-                          ])
-                        ],
-                      )
-                    ],
-                  ),
-                ],
-              ),
-            ],
-          ),
+    return Card(
+      child: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+        child: Column(
+          children: [
+            Column(
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Fecha: $fechaJuego',
+                      style: TextStyle(fontSize: 20),
+                    ),
+                    Text(
+                      'Hora: $horaJuego',
+                      style: TextStyle(fontSize: 20),
+                    ),
+                    Text(
+                      'Lugar: $lugarJuego',
+                      style: TextStyle(fontSize: 20),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Column(
+                          children: [
+                            Image.asset(
+                              'assets/images/logo-$equipoLocal.png',
+                              width: 60,
+                              height: 60,
+                            ),
+                            Text(equipoLocal, style: TextStyle(fontSize: 20))
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Text('$resultadoLocal - $resultadoVisita',
+                                style: TextStyle(fontSize: 40)),
+                            Text(tiempo)
+                          ],
+                        ),
+                        Column(children: [
+                          Image.asset('assets/images/logo-$equipoVisita.png',
+                              width: 60, height: 60),
+                          Text(equipoVisita, style: TextStyle(fontSize: 20))
+                        ])
+                      ],
+                    )
+                  ],
+                ),
+              ],
+            ),
+          ],
         ),
       ),
-      onTap: () {
-        print('Detalle $equipoLocal vs $equipoVisita');
-        //Navigator.pop(context);
-        //Navigator.pushReplacementNamed(context, item['route']!);
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => GameScreen()),
-        );
-      },
     );
   }
 }
