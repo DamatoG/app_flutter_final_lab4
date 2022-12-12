@@ -37,8 +37,9 @@ class NavigationDrawerWidget extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             buildMenuItem(
+              ruta:'stats',
               context,
-              text: "Estadisticas (Proximamente)",
+              text: "Estadisticas",
               icon: Icons.stacked_bar_chart_sharp,
             ),
             const SizedBox(height: 10),

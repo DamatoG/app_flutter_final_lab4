@@ -27,6 +27,7 @@ class MyApp extends StatelessWidget {
         'home': (context) => const HomePage(),
         'listGames': (context) => ListGamePage(),
         'gameDetail': (context) => GameScreen(),
+        'stats': (context) => StatsPage(),
       },
     );
   }

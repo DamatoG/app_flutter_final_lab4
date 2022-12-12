@@ -61,7 +61,7 @@ class HomePage extends StatelessWidget {
                               child: Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
-                                  children: <Widget>[
+                                  children: [
                                     Text('0'),
                                     Image(
                                         image: AssetImage(
@@ -80,7 +80,7 @@ class HomePage extends StatelessWidget {
                               child: Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
-                                  children: <Widget>[
+                                  children:[
                                     Text('0'),
                                     Image(
                                         image: AssetImage(
@@ -137,7 +137,7 @@ class HomePage extends StatelessWidget {
                                 child: Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceEvenly,
-                                    children: const <Widget>[
+                                    children: [
                                       Text('0'),
                                       Image(
                                           image: AssetImage(
@@ -154,7 +154,7 @@ class HomePage extends StatelessWidget {
                                 child: Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceEvenly,
-                                    children: const <Widget>[
+                                    children:[
                                       Text('0'),
                                       Image(
                                           image: AssetImage(
