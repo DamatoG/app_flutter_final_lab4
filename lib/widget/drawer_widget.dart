@@ -85,7 +85,7 @@ Widget buildSearchBar() {
       hintStyle: const TextStyle(color: color),
       prefixIcon: const Icon(Icons.search, color: color),
       filled: true,
-      fillColor: Color.fromARGB(31, 226, 219, 219),
+      fillColor: Color.fromARGB(172, 42, 87, 222),
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(5),
         borderSide: BorderSide(color: color.withOpacity(0.7)),
