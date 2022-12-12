@@ -10,7 +10,7 @@ class NavigationDrawerWidget extends StatelessWidget {
     return Container(
       decoration: const BoxDecoration(
           gradient: LinearGradient(
-        colors: [Colors.blueGrey, Colors.blueAccent],
+        colors: [Color.fromARGB(255, 246, 247, 247), Color.fromARGB(255, 221, 225, 231)],
       )),
       child: Drawer(
           child: Material(
@@ -61,7 +61,7 @@ Widget buildMenuItem(
   required IconData icon,
   ruta,
 }) {
-  const color = Colors.black;
+  const color = Colors.white;
   const hoverColor = Color.fromARGB(232, 230, 8, 196);
 
   return ListTile(
@@ -85,7 +85,7 @@ Widget buildSearchBar() {
       hintStyle: const TextStyle(color: color),
       prefixIcon: const Icon(Icons.search, color: color),
       filled: true,
-      fillColor: Colors.white12,
+      fillColor: Color.fromARGB(31, 226, 219, 219),
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(5),
         borderSide: BorderSide(color: color.withOpacity(0.7)),
