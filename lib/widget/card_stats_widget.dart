@@ -24,7 +24,9 @@ class CardStats extends StatelessWidget {
     return Card(
       child: Row(
         children:[
-          Image.asset(foto),
+          Container(
+            padding: EdgeInsets.all(20),
+            child: Image.asset(foto)),
           Container(
             padding: EdgeInsets.all(20),
             child: Column(
