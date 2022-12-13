@@ -59,7 +59,8 @@ class CardGame extends StatelessWidget {
                               width: 60,
                               height: 60,
                             ),
-                            Text(equipoLocal, style: TextStyle(fontSize: 20))
+                            Text(equipoLocal.toUpperCase(),
+                                style: TextStyle(fontSize: 20))
                           ],
                         ),
                         Column(
@@ -72,7 +73,8 @@ class CardGame extends StatelessWidget {
                         Column(children: [
                           Image.asset('assets/images/logo-$equipoVisita.png',
                               width: 60, height: 60),
-                          Text(equipoVisita, style: TextStyle(fontSize: 20))
+                          Text(equipoVisita.toUpperCase(),
+                              style: TextStyle(fontSize: 20))
                         ])
                       ],
                     )
