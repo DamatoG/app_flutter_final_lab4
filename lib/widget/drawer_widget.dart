@@ -10,12 +10,12 @@ class NavigationDrawerWidget extends StatelessWidget {
     return Container(
       decoration: const BoxDecoration(
           gradient: LinearGradient(
-        colors: [Colors.blueGrey, Colors.blueAccent],
+        colors: [Color.fromARGB(255, 246, 247, 247), Color.fromARGB(255, 221, 225, 231)],
       )),
       child: Drawer(
           child: Material(
         child: ListView(
-          children: <Widget>[
+          children:[
             const SizedBox(height: 10),
             buildSearchBar(),
             const SizedBox(height: 10),
@@ -37,12 +37,14 @@ class NavigationDrawerWidget extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             buildMenuItem(
+              ruta:'stats',
               context,
-              text: "Estadisticas (Proximamente)",
+              text: "Estadisticas",
               icon: Icons.stacked_bar_chart_sharp,
             ),
             const SizedBox(height: 10),
             buildMenuItem(
+              ruta:'home',
               context,
               text: "Historial (Proximamente)",
               icon: Icons.history,
@@ -60,7 +62,7 @@ Widget buildMenuItem(
   required IconData icon,
   ruta,
 }) {
-  const color = Colors.black;
+  const color = Colors.white;
   const hoverColor = Color.fromARGB(232, 230, 8, 196);
 
   return ListTile(
@@ -84,7 +86,7 @@ Widget buildSearchBar() {
       hintStyle: const TextStyle(color: color),
       prefixIcon: const Icon(Icons.search, color: color),
       filled: true,
-      fillColor: Colors.white12,
+      fillColor: Color.fromARGB(172, 42, 87, 222),
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(5),
         borderSide: BorderSide(color: color.withOpacity(0.7)),
