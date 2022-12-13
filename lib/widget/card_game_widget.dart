@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/pages/game_detail.dart';
 
 class CardGame extends StatelessWidget {
   final String fechaJuego;
@@ -55,7 +54,7 @@ class CardGame extends StatelessWidget {
                         Column(
                           children: [
                             Image.asset(
-                              'assets/images/logo-$equipoLocal.png',
+                              'assets/images/logos/logo-$equipoLocal.png',
                               width: 60,
                               height: 60,
                             ),
@@ -71,8 +70,10 @@ class CardGame extends StatelessWidget {
                           ],
                         ),
                         Column(children: [
-                          Image.asset('assets/images/logo-$equipoVisita.png',
-                              width: 60, height: 60),
+                          Image.asset(
+                              'assets/images/logos/logo-$equipoVisita.png',
+                              width: 60,
+                              height: 60),
                           Text(equipoVisita.toUpperCase(),
                               style: TextStyle(fontSize: 20))
                         ])

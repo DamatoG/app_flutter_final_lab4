@@ -73,7 +73,7 @@ class ListGamePage extends StatelessWidget {
                       _cardsItems[index]['resultadoVisita'].toString(),
                   tiempo: _cardsItems[index]['tiempo'].toString()),
               onTap: () {
-                print("hola");
+                //print("hola");
                 Navigator.pushNamed(context, 'gameDetail');
               },
             );

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/widget/widget.dart';
 
-import '../widget/drawer_widget.dart';
-
 class StatsPage extends StatelessWidget {
   final List<Map<String, String>> _cardsItems = <Map<String, String>>[
     {
@@ -37,7 +35,7 @@ class StatsPage extends StatelessWidget {
       'pais': "PAIS: FRANCIA",
       'cantidad': "MUNDIALES JUGADOS: 4",
     },
-      {
+    {
       'foto': 'assets/images/stats/Hadary.png',
       'logro': "JUGADOR CON MAYOR EDAD",
       'nombre': "ESSAM EL HADARY ",
@@ -45,7 +43,7 @@ class StatsPage extends StatelessWidget {
       'pais': "PAIS: EGIPTO",
       'cantidad': "MUNDIALES JUGADOS: 1",
     },
-       {
+    {
       'foto': 'assets/images/stats/Brasil.png',
       'logro': "SELECCION CON MAS TITULOS",
       'nombre': "BRASIL",

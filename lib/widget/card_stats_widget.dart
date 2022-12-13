@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/pages/stats_page.dart';
 
 class CardStats extends StatelessWidget {
   final String foto;
@@ -22,24 +21,21 @@ class CardStats extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      child: Row(
-        children:[
-          Container(
-            padding: EdgeInsets.all(20),
-            child: Image.asset(foto)),
-          Container(
-            padding: EdgeInsets.all(20),
-            child: Column(
-              children: [
-                Text(logro),
-                Text(nombre),
-                Text(variante),
-                Text(pais),
-                Text(cantidad)
-              ],
-            ),
-          )]
-      ),
+      child: Row(children: [
+        Container(padding: EdgeInsets.all(20), child: Image.asset(foto)),
+        Container(
+          padding: EdgeInsets.all(20),
+          child: Column(
+            children: [
+              Text(logro),
+              Text(nombre),
+              Text(variante),
+              Text(pais),
+              Text(cantidad)
+            ],
+          ),
+        )
+      ]),
     );
   }
 }

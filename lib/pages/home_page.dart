@@ -68,7 +68,7 @@ class HomePage extends StatelessWidget {
                                         width: 60,
                                         height: 60,
                                         image: AssetImage(
-                                            'assets/images/logo-marruecos.png')),
+                                            'assets/images/logos/logo-marruecos.png')),
                                     Column(
                                       children: [Text('VS'), Text('36' "'")],
                                     ),
@@ -76,7 +76,7 @@ class HomePage extends StatelessWidget {
                                         width: 60,
                                         height: 60,
                                         image: AssetImage(
-                                            'assets/images/logo-francia.png')),
+                                            'assets/images/logos/logo-francia.png')),
                                     const Text('1')
                                   ])),
                           Card(
@@ -91,7 +91,7 @@ class HomePage extends StatelessWidget {
                                         width: 60,
                                         height: 60,
                                         image: AssetImage(
-                                            'assets/images/logo-argentina.png')),
+                                            'assets/images/logos/logo-argentina.png')),
                                     Column(
                                       children: [Text('VS'), Text('32' "'")],
                                     ),
@@ -99,7 +99,7 @@ class HomePage extends StatelessWidget {
                                         width: 60,
                                         height: 60,
                                         image: AssetImage(
-                                            'assets/images/logo-inglaterra.png')),
+                                            'assets/images/logos/logo-inglaterra.png')),
                                     const Text('0')
                                   ]))
                         ],
@@ -152,13 +152,13 @@ class HomePage extends StatelessWidget {
                                           width: 60,
                                           height: 60,
                                           image: AssetImage(
-                                              'assets/images/logo-holanda.png')),
+                                              'assets/images/logos/logo-holanda.png')),
                                       Text('VS'),
                                       Image(
                                           width: 60,
                                           height: 60,
                                           image: AssetImage(
-                                              'assets/images/logo-croacia.png')),
+                                              'assets/images/logos/logo-croacia.png')),
                                       Text('0')
                                     ])),
                             Card(
@@ -173,13 +173,13 @@ class HomePage extends StatelessWidget {
                                           width: 60,
                                           height: 60,
                                           image: AssetImage(
-                                              'assets/images/logo-brasil.png')),
+                                              'assets/images/logos/logo-brasil.png')),
                                       Text('VS'),
                                       Image(
                                           width: 60,
                                           height: 60,
                                           image: AssetImage(
-                                              'assets/images/logo-portugal.png')),
+                                              'assets/images/logos/logo-portugal.png')),
                                       Text('0')
                                     ]))
                           ],
