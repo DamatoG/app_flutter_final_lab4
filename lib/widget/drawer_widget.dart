@@ -15,7 +15,7 @@ class NavigationDrawerWidget extends StatelessWidget {
       child: Drawer(
           child: Material(
         child: ListView(
-          children: <Widget>[
+          children:[
             const SizedBox(height: 10),
             buildSearchBar(),
             const SizedBox(height: 10),
@@ -44,6 +44,7 @@ class NavigationDrawerWidget extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             buildMenuItem(
+              ruta:'home',
               context,
               text: "Historial (Proximamente)",
               icon: Icons.history,
