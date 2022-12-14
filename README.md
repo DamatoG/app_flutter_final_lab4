@@ -30,15 +30,3 @@ Aplicación desarrollada en Dart y Flutter a modo de proyecto para aprobación d
 
 Realizadas en emulador android Pixel 6. 
 API: 30:5554
-
-
-
-
-
-
-
-
-
-
-
-Pixel 6 Pro API 30
