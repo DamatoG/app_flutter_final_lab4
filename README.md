@@ -1,16 +1,44 @@
-# flutter_application_1
+#Descripcion general
 
-A new Flutter project.
+Aplicación desarrollada en Dart y Flutter a modo de proyecto para aprobación de cursada de la materia "Laboratorio 4" de la carrera TUP de la UTN FRBB.
 
-## Getting Started
+# Caracteristicas y funcionalidades actuales World Capp.
 
-This project is a starting point for a Flutter application.
+---- 4 Pantallas: 
 
-A few resources to get you started if this is your first Flutter project:
+    ****Home: 
+    Display de 2 partidos en vivo y 2 partidos futuros.
+    Partidos futuros redirecciona a pantalla de listado de partidos futuros.
+    Partidos en vivo muestra el resultado y el minuto del encuentro (Redireccion a pagina de partidos en vivo en la siguiente versión)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+    ****Proximos Partidos:
+    Display de los proximos 4 partidos con su respectiva fecha, horario,estadio, equipo visitante y equipo local, ambos con sus logos.
+    Cada partido es clickeable y redirecciona a la informacion detallada de dicho partido.
+    
+    ****Detalle Partido:
+    Display de información detallada sobre el partido (Remates,tarjetas,posesion,etc) que será utilizada en proximas versiones en la pantalla "Historial"
+    
+    ****Estadisticas:
+    Display de records mundialistas, con sus respectivos conquistadores, una imagen de los mismos, y una breve descripcion.
+    
+    
+---- Navegación:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    Realizada a través de un drawer con iconos representativos. Cuenta con una search bar que no es funcional en la version actual.
+    
+----Pruebas:
+
+Realizadas en emulador android Pixel 6. 
+API: 30:5554
+
+
+
+
+
+
+
+
+
+
+
+Pixel 6 Pro API 30
