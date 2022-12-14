@@ -12,11 +12,11 @@ class StatsPage extends StatelessWidget {
       'cantidad': "MUNDIALES JUGADOS: 4",
     },
     {
-      'foto': 'assets/images/stats/Lothar.png',
+      'foto': 'assets/images/stats/Messi.png',
       'logro': "MAYOR CANTIDAD DE PARTIDOS",
-      'nombre': "LOTHAR MATTHAUS",
-      'variante': "PARTIDOS: 25",
-      'pais': "PAIS: ALEMANIA",
+      'nombre': "LIONEL MESSI",
+      'variante': "PARTIDOS: 26",
+      'pais': "PAIS: ARGENTINA",
       'cantidad': "MUNDIALES JUGADOS: 5",
     },
     {
