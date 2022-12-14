@@ -57,10 +57,8 @@ class StatsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
       drawer: const NavigationDrawerWidget(),
       appBar: AppBar(
-        backgroundColor: Colors.black,
         title: const Text("Mundial Qatar 2022"),
         centerTitle: true,
       ),

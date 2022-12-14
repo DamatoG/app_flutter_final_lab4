@@ -11,7 +11,6 @@ class HomePage extends StatelessWidget {
       drawer: const NavigationDrawerWidget(),
       appBar: AppBar(
           centerTitle: false,
-          backgroundColor: Colors.black38,
           title: const Padding(
               padding: EdgeInsets.only(left: 5.0), child: Text("World Capp")),
           elevation: 10),

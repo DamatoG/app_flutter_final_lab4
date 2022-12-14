@@ -26,10 +26,8 @@ class GameScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //backgroundColor: Colors.black,
       drawer: const NavigationDrawerWidget(),
       appBar: AppBar(
-        //backgroundColor: Colors.black,
         title: const Text("Mundial Qatar 2022"),
         centerTitle: true,
       ),
@@ -48,7 +46,6 @@ class GameScreen extends StatelessWidget {
           const SizedBox(
             height: 30,
           ),
-          // ignore: avoid_unnecessary_containers
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -64,8 +61,6 @@ class GameScreen extends StatelessWidget {
                 children: [
                   Column(
                     children: [
-                      //Text(
-                      //"${detalleJuego['remates']!['local'].toString()}\n${detalleJuego['ataques']!['local'].toString()}\n${detalleJuego['posesion']!['local'].toString()}\n${detalleJuego['tarjetas']!['local'].toString()}\n${detalleJuego['corners']!['local'].toString()}\n")
                       Text(detalleJuego['remates']!['local'].toString(),
                           style: TextStyle(fontSize: 20)),
                       const SizedBox(
@@ -179,51 +174,6 @@ class GameScreen extends StatelessWidget {
                   )
                 ],
               )
-              // Column(
-              //   mainAxisAlignment: MainAxisAlignment.center,
-              //   children: [
-              //     Row(
-              //       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              //       children: [
-              //         Text(detalleJuego['remates']!['local'].toString()),
-              //         Text('remates'),
-              //         Text(detalleJuego['remates']!['visita'].toString()),
-              //       ],
-              //     ),
-              //     Row(
-              //       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              //       children: [
-              //         Text(detalleJuego['ataques']!['local'].toString()),
-              //         Text('Ataques'),
-              //         Text(detalleJuego['ataqies']!['visita'].toString()),
-              //       ],
-              //     ),
-              //     Row(
-              //       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              //       children: [
-              //         Text(detalleJuego['posesion']!['local'].toString()),
-              //         Text('Posesion'),
-              //         Text(detalleJuego['posesion']!['visita'].toString()),
-              //       ],
-              //     ),
-              //     Row(
-              //       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              //       children: [
-              //         Text(detalleJuego['tarjetas']!['local'].toString()),
-              //         Text('Tarjetas'),
-              //         Text(detalleJuego['tarjetas']!['visita'].toString()),
-              //       ],
-              //     ),
-              //     Row(
-              //       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              //       children: [
-              //         Text(detalleJuego['corners']!['local'].toString()),
-              //         Text('Tiro de esquina'),
-              //         Text(detalleJuego['corners']!['visita'].toString()),
-              //       ],
-              //     ),
-              //   ],
-              // )
             ],
           )
         ],

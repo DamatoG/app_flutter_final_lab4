@@ -9,6 +9,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/pages.dart';
+import 'package:flutter_application_1/themes/default_theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'MyApp',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark(),
+      theme: DefaultTheme.defaultTheme,
       initialRoute: 'home',
       routes: {
         'home': (context) => const HomePage(),

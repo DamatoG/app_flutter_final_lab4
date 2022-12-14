@@ -10,12 +10,15 @@ class NavigationDrawerWidget extends StatelessWidget {
     return Container(
       decoration: const BoxDecoration(
           gradient: LinearGradient(
-        colors: [Color.fromARGB(255, 246, 247, 247), Color.fromARGB(255, 221, 225, 231)],
+        colors: [
+          Color.fromARGB(255, 246, 247, 247),
+          Color.fromARGB(255, 221, 225, 231)
+        ],
       )),
       child: Drawer(
           child: Material(
         child: ListView(
-          children:[
+          children: [
             const SizedBox(height: 10),
             buildSearchBar(),
             const SizedBox(height: 10),
@@ -37,14 +40,14 @@ class NavigationDrawerWidget extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             buildMenuItem(
-              ruta:'stats',
+              ruta: 'stats',
               context,
               text: "Estadisticas",
               icon: Icons.stacked_bar_chart_sharp,
             ),
             const SizedBox(height: 10),
             buildMenuItem(
-              ruta:'home',
+              ruta: 'home',
               context,
               text: "Historial (Proximamente)",
               icon: Icons.history,
@@ -66,8 +69,12 @@ Widget buildMenuItem(
   const hoverColor = Color.fromARGB(232, 230, 8, 196);
 
   return ListTile(
-    leading: Icon(icon, color: color),
-    title: Text(text, style: const TextStyle(color: color)),
+    leading: Icon(
+      icon,
+    ),
+    title: Text(
+      text,
+    ),
     hoverColor: hoverColor,
     onTap: () {
       Navigator.pushNamed(context, ruta);

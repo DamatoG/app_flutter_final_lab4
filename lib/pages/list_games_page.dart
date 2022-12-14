@@ -50,10 +50,8 @@ class ListGamePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //backgroundColor: Colors.black,
       drawer: const NavigationDrawerWidget(),
       appBar: AppBar(
-        //backgroundColor: Colors.black,
         title: const Text("Mundial Qatar 2022"),
         centerTitle: true,
       ),
@@ -73,7 +71,6 @@ class ListGamePage extends StatelessWidget {
                       _cardsItems[index]['resultadoVisita'].toString(),
                   tiempo: _cardsItems[index]['tiempo'].toString()),
               onTap: () {
-                //print("hola");
                 Navigator.pushNamed(context, 'gameDetail');
               },
             );
